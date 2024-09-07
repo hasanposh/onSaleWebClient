@@ -1,9 +1,13 @@
+import { Outlet } from "react-router-dom";
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
 
 const Main = () => {
   return (
-    <div className="flex items-center justify-center h-full">
-      main page
-     
+    <div >
+      <NavBar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };
